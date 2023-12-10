@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BREW HOUSE</title>
+    {% include 'fav.html'%}
+    <link rel="stylesheet" type="text/css" href="/static/css/menu.css">
+</head>
+
+<body>
+    {% include 'nav.html'%}
+    <section class="menu2">
+        <div class="divisions">
+            <ul>
+                <li><a href='menu' class="underline-on-hover1">Beverages</a></li>
+                <li><a href='cookies' class="underline-on-hover1">Cookies</a></li>
+                <li><a href='sweets' class="underline-on-hover1">Sweet Treats</a></li>
+                <li><a href='desserts' class="underline-on-hover1">Desserts</a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="sectionmenu">
+        <div class="product-card">
+            <div class="product-image">
+                <img src="/static/imgs/choco chip.jpeg" alt="Product 1">
+            </div>
+            <div class="product-description">
+                <h1>Chocolate Chip Cookies</h1>
+            </div>
+            <div class="product-price">
+                ₹40/-
+            </div>
+            <div>
+          <form action="cart" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="Product-id" value="17" />
+            <input type="hidden" name="Product-name" value="Chocolate Chip Cookies" />
+            <input type="hidden" name="action" value="add" />
+            <button type="submit" class="ATC-2">Add to Cart</button>
+          </form>
+        </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+                <img src="/static/imgs/Oatmeal Raisin Cookies.jpeg" alt="Product 1">
+            </div>
+            <div class="product-description">
+                <h1>Oatmeal Raisin Cookies</h1>
+            </div>
+            <div class="product-price">
+                ₹45/-
+            </div>
+            <div>
+          <form action="cart" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="Product-id" value="18" />
+            <input type="hidden" name="Product-name" value="Oatmeal Raisin Cookies" />
+            <input type="hidden" name="action" value="add" />
+            <button type="submit" class="ATC-2">Add to Cart</button>
+          </form>
+        </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+                <img src="/static/imgs/Double Chocolate Cookies.jpeg" alt="Product 1">
+            </div>
+            <div class="product-description">
+                <h1>Double Chocolate</h1>
+            </div>
+            <div class="product-price">
+                ₹50/-
+            </div>
+            <div>
+          <form action="cart" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="Product-id" value="19" />
+            <input type="hidden" name="Product-name" value="Double Chocolate" />
+            <input type="hidden" name="action" value="add" />
+            <button type="submit" class="ATC-2">Add to Cart</button>
+          </form>
+        </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+                <img src="/static/imgs/White Chocolate Macadamia Nut Cookies.jpeg" alt="Product 1">
+            </div>
+            <div class="product-description">
+                <h1>White Chocolate Nut</h1>
+            </div>
+            <div class="product-price">
+                ₹55/-
+            </div>
+            <div>
+          <form action="cart" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="Product-id" value="20" />
+            <input type="hidden" name="Product-name" value="White Chocolate Nut" />
+            <input type="hidden" name="action" value="add" />
+            <button type="submit" class="ATC-2">Add to Cart</button>
+          </form>
+        </div>
+        </div>
+    </section>
+    <br><br>
+    {% include 'footer.html'%}
+</body>
+
+</html>

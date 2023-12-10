@@ -1,0 +1,188 @@
+body{
+    background-color: #FFE4C8;
+}
+.sectionmenu{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+nav li {
+    margin-left: -1px !important;
+}
+
+nav ul {
+    padding-right: 0px !important;
+}
+
+.sectionmenu1{
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.product-card {
+    background-color: white;
+    border: 1px solid #ffffff;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    /* border-radius: 10px; */
+    width: 295px;
+    text-align: center;
+    padding: 65px;
+    margin: 20px;
+    display: inline-block;
+    box-shadow:0px 0px 10px 5px #000;
+    
+}
+
+.product-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 15px;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-description {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-family: 'Bahnschrift';
+}
+
+.product-price {
+    text-decoration: underline;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FF5733;
+    margin-bottom: 20px;
+    font-family: 'Bahnschrift';
+}
+
+.divisions ul {
+    padding-left: 32%;
+    padding-top: 15px;
+    list-style: none;
+    display: flex;
+    padding-right: 250px;
+}
+
+li {
+    margin: 0 30px;
+}
+
+a.underline-on-hover1 {
+    font-family: 'Book Antiqua';
+    text-decoration: none;
+    color: #311C10;
+    font-weight: 600;
+    font-size: 30px;
+    position: relative; /* To allow absolute positioning within the link */
+}
+
+a.underline-on-hover1:hover{
+    color: #000;
+}
+
+/* Create the underline element */
+a.underline-on-hover1::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px; /* Adjust the height of the underline as needed */
+    bottom: -5px;
+    left: 0;
+    background-color: #000; /* Adjust the color as needed */
+    transition: width 0.3s; /* Add a smooth transition effect */
+}
+
+/* Define the hover effect */
+a.underline-on-hover1:hover::after {
+    width: 100%; /* Expand the underline from left to right */
+    transition: 0.3s linear;
+}
+
+.ATC-2 {
+    font-family: 'Bahnschrift';
+    z-index: 0;
+    padding: 10px 20px;
+    background-color: #4A4949;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: box-shadow 0.3s;
+    /* Add transition to box shadow */
+}
+
+/* Hover effect with box shadow */
+.ATC-2:hover {
+    background-color: #555353;
+    box-shadow: 0px 0px 10px 5px #555353;
+    /* Customize the box shadow here */
+}
+.product-card{
+    overflow: hidden;
+}
+
+.product-card {
+    transition: 500ms;
+    object-fit: cover;
+}
+
+.product-card:hover {
+    transform: scale(1.1);
+}
+
+/* 
+.product-card{
+    overflow: hidden;
+}
+
+.product-card .product-price{
+    transition: 500ms;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-card:hover .product-price{
+    transform: scale(1.2);
+}
+
+.product-card{
+    overflow: hidden;
+}
+
+.product-card img{
+    transition: 500ms;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-card:hover img{
+    transform: scale(1.2);
+}
+
+.product-card{
+    overflow: hidden;
+}
+
+.product-card .product-description{
+    transition: 500ms;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-card:hover .product-description{
+    transform: scale(1.2);
+} */

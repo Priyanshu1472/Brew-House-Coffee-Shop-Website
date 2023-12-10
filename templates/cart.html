@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BREW HOUSE</title>
+    <link rel="stylesheet" href="/static/css/cart.css">
+    {% include 'fav.html'%}
+  </head>
+  <body>
+    {% include 'nav.html' %}
+    <div class="containerc">
+      <h1>Your Cart</h1>
+      {% if error %}
+      <h2>{{ error }}</h2>
+      {% endif %}
+      {% if data %}
+      <table>
+        <tr>
+          <th>Product Name</th>
+          <th>Product Price</th>
+          <th>Quantity</th>
+          <th>Reduce Quantity</th>
+        </tr>
+        {% for i in data %}
+        <tr>
+          <td>{{ i.product_name }}</td>
+          <td>{{ i.price }}</td>
+          <td>{{ i.quantity}}</td>
+          <td>
+            <form action="cart" method="post">
+              {% csrf_token %}
+              <input type="hidden" name="Product-name" value="{{ i.product_name }}">
+              <input type="hidden" name="Product-id" value="{{ i.product_id }}">
+              <input type="hidden" name="action" value="remove">
+              <button type="submit" class="remove-button">Remove</button>
+            </form>
+          </td>
+        </tr>
+        {% endfor %}
+      </table>
+      <br>
+      <div class="total">TOTAL PRICE: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{ total }}</div>
+      <div class="cart-buttons">
+        <button id="checkout"><a href="checkout?item=yes">Checkout</a></button>
+      </div>
+      {% else %}
+      <div class="cart-buttons">
+        <button id="checkout"><a href="checkout?item=none">Checkout</a></button>
+      </div>
+      {% endif %}
+    </div>
+    
+    {% include 'footer.html'%}
+  </body>
+</html>

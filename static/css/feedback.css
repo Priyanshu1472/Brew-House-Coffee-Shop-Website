@@ -1,0 +1,58 @@
+body {
+font-family: Arial, sans-serif;
+background-color: #f0f0f0;
+margin: 0;
+padding: 0;
+background-image: url(/static/imgs/bannerimage.jpg);
+}
+.left-arrow{
+    text-decoration: none;
+}
+.container {
+width: 420px;
+margin-top: 10%;
+margin-left: 35%;
+padding: 20px;
+background-color: #ffe4c8;
+border-radius: 5px;
+box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.1);
+text-align: center;
+position:relative;
+}
+
+h2 {
+color: #000000;
+}
+
+form {
+text-align: left;
+}
+
+label {
+display: block;
+margin: 10px 0;
+color: #000000;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+width: 400px;
+padding: 10px;
+margin-bottom: 20px;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+
+input[type="submit"] {
+background-color: #f9c58a;
+color: #000000;
+padding: 10px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+input[type="submit"]:hover {
+background-color: #311C10;
+}

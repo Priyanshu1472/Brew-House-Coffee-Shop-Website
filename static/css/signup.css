@@ -1,0 +1,93 @@
+body {
+  margin: 20px;
+  padding: 0;
+  background-image: url(/static/imgs/bannerimage.jpg);
+  background-repeat: repeat;
+  background-size: 100%;
+}
+
+h1 {
+margin-top: -20px;
+margin-left: 20px ;
+}
+
+hr {
+  height: 2px;
+  background-color: #000;
+  border: none;
+}
+.card {
+  padding-left: 0px;
+  background-color: #ffe4c8;
+  border: 1px solid #000000;
+  /* border-radius: 10px; */
+  width: 320px;
+  height: 500px;
+  text-align: left;
+  padding: 65px;
+  margin-left: 37%;
+  margin-top: 9%;
+  display: inline-block;
+  box-shadow: 0px 0px 500px 10px #ffffff;
+}
+
+button {
+  background-color: 00ffff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#login {
+  padding: 10px 150px;
+  margin-left: -28px;
+  margin-top: -20px;
+  font-size: larger;
+  font-weight: bolder;
+  background-color: #311c10;
+  color: #ffffff;
+}
+
+#login {
+  overflow: hidden;
+}
+
+#login {
+  transition: 400ms;
+  object-fit: cover;
+}
+
+#login:hover {
+  transform: scale(1.1);
+}
+
+#create-new-account {
+  font-family: "Centaur";
+  margin: 42px;
+  font-size: 25px;
+  background-color: #311c10;
+  color: #ffffff;
+}
+
+#create-new-account {
+  overflow: hidden;
+}
+
+#create-new-account {
+  transition: 400ms;
+  object-fit: cover;
+}
+
+#create-new-account:hover {
+  transform: scale(1.1);
+}
+
+a {
+  color: white;
+}
+
+h2{
+    margin-top: -20px;
+}

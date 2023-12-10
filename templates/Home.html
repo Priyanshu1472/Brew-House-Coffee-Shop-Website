@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/Home.css">
+    <title>BREW HOUSE</title>
+    {% include 'fav.html'%}
+</head>
+<body>
+    {% include 'nav.html'%} 
+    <section>
+        <div class="background-image">
+            <!-- <button id="scrollButton">Scroll Down &#8595;</button> -->
+            <div class="content">
+                <!-- <br><br><br><br><br><br><br><br><br><br> -->
+                <img src="/static/imgs/bgg2.jpg" alt="" style="margin-top: 13%; opacity: 70%;">
+            </div>
+        </div>
+    </section>
+    <section>
+                <hr>
+                <section>
+        <div class="best-seller-box">
+            <h2>BestSellers</h2>
+            <div class="product">
+                <img src="/static/imgs/cold coffee.jpg" alt="Product 1">
+                <p>Cold coffee <br><br>
+                    ₹99/-
+                </p>
+                <div>
+                    <form action="cart" method="post">
+                      {% csrf_token %}
+                      <input type="hidden" name="Product-id" value="1" />
+                      <input type="hidden" name="Product-name" value="Cold Coffee">
+                      <input type="hidden" name="action" value="add" />
+                      <button type="submit" class="ATC">Add to Cart</button>
+                    </form>
+                  </div>
+            </div>
+            <div class="product">
+                <img src="/static/imgs/flat white coffee.jpeg" alt="Product 2">
+                <p>Flat white
+                    <br><br>₹189/-
+                </p>
+                <div>
+                    <form action="cart" method="post">
+                      {% csrf_token %}
+                      <input type="hidden" name="Product-id" value="2" />
+                      <input type="hidden" name="Product-name" value="Flat white">
+                      <input type="hidden" name="action" value="add" />
+                      <button type="submit" class="ATC">Add to Cart</button>
+                    </form>
+                  </div>
+            </div>
+            <div class="product">
+                <img src="/static/imgs/Espresso.jpeg" alt="Product 3">
+                <p>Espresso
+                    <br><br>₹249/-
+                </p>
+                <div>
+                    <form action="cart" method="post">
+                      {% csrf_token %}
+                      <input type="hidden" name="Product-id" value="3" />
+                      <input type="hidden" name="Product-name" value="Espresso">
+                      <input type="hidden" name="action" value="add" />
+                      <button type="submit" class="ATC">Add to Cart</button>
+                    </form>
+                  </div>
+            </div>
+            <div class="product">
+                <img src="/static/imgs/amaricano coffee.jpeg" alt="Product 4">
+                <p>Americano
+                    <br><br>₹369/-
+                </p>
+                <div>
+                    <form action="cart" method="post">
+                      {% csrf_token %}
+                      <input type="hidden" name="Product-id" value="4" />
+                      <input type="hidden" name="Product-name" value="Americano">
+                      <input type="hidden" name="action" value="add" />
+                      <button type="submit" class="ATC">Add to Cart</button>
+                    </form>
+                  </div>
+            </div>
+                <div class="Explore">
+                    <button><a href='menu' class="explore-button"><span>&#8594;</span>Explore More</a></button>
+                </div>
+            </section>
+            <hr>
+            <section  class="feedback">
+                <h1>FeedBack</h1>
+            </section>
+            <section  class="fb">
+                {% for n in feedata %}
+                <div class="feedback-card">
+                    <div class="feedback-text">
+                        {{n.feedback }}
+                    </div>
+                    <div class="feedback-author">
+                        {{n.name}}
+                    </div>
+                </div>
+                {% endfor %}
+            </section>
+    {% include 'footer.html'%}
+</body>
+</html>

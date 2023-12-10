@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/about.css">
+    <title>BREW HOUSE</title>
+    {% include 'fav.html'%}
+</head>
+
+<body>
+    {% include 'nav.html'%}
+
+    <section class="sec1">
+        <div>
+            <h1>About Us</h1>
+        </div>
+        <section class="Welcome">
+            <div class="card1">
+                <div class="au1">
+                    <p>Welcome to <a href="/" class="home-btn">Brew House!</a></p>
+                    <br><br>
+                    <p>At Brew House, we're passionate about two things: great coffee and exceptional experiences. We
+                        believe that acup of coffee is not just a beverage; it's a momentof pure pleasure, a pause in
+                        your busy day, and a warm
+                        embrace that brings people together.</p>
+                </div>
+        </section>
+    </section>
+    <hr class="horizontal">
+    <section class="sec2">
+        <div class="slider-buttons">
+        <a href="#section1"id="sbutton1" class="slider-button sactive" onclick="showSection(1)">OUR STORY</a>
+        <a href="#section2"id="sbutton2" class="slider-button" onclick="showSection(2)">A PLACE OF COMMUNITY</a>
+        <a href="#section3"id="sbutton3" class="slider-button" onclick="showSection(3)">OUR COFFEE</a>
+        <a href="#section4"id="sbutton4" class="slider-button" onclick="showSection(4)">OUR TEAM</a>
+        <a href="#section5"id="sbutton5" class="slider-button" onclick="showSection(5)">SUSTAINABILITY</a>
+        </div>
+        <div class="card-container">
+            <div class="card-content active" id="section1">
+                <h2>OUR STORY</h2>
+                <p>Our journey began with a love for the perfect brew. We scoured the globe in search of the finest
+                    coffee
+                    beans, carefully selecting and roasting each batch to bring out the unique flavors and aromas
+                    that make
+                    our coffee truly special. Our commitment to quality extends to every aspect of the coffee-making
+                    process, from the moment the beans are grown to the final sip in your cup.
+                </p>
+            </div>
+            <div class="card-content" id="section2">
+                <h2>A PLACE OF COMMUNITY</h2>
+                <p>Beyond our delicious coffee, we take pride in creating a welcoming and comfortable space for our
+                    customers. Brew House is more than just a café; it's a place where friendships are forged, ideas
+                    are born, and conversations flow as freely as our freshly brewed coffee. Whether you're stopping
+                    by for a quick caffeine fix, working on your latest project, or simply catching up with friends,
+                    our doors are always open to you.
+                </p>
+            </div>
+            <div class="card-content" id="section3">
+                <h2>OUR COFFEE</h2>
+                <p>We take coffee seriously. Our beans are sourced from the best coffee-growing regions
+                    worldwide. We roast them with care to bring out their unique flavors, and our skilled
+                    baristas craft each cup with precision. Whether you prefer a classic espresso, a frothy
+                    latte, or a cold brew, we have something for every palate.</p>
+            </div>
+            <div class="card-content" id="section4">
+                <h2>OUR TEAM</h2>
+                <p>The heart and soul of Brew House is our dedicated team of baristas. They're not just experts
+                    at making coffee; they're artists who pour their creativity and passion into every cup. With a
+                    warm smile and a deep knowledge of coffee, they're here to make your experience at our coffee
+                    shop memorable and enjoyable.
+                </p>
+            </div>
+            <div class="card-content" id="section5">
+                <h2>SUSTAINABILITY</h2>
+                <p>We also take our responsibility to the planet seriously. We source our coffee beans from
+                    environmentally-conscious suppliers, and we're committed to reducing our carbon
+                    footprint. We
+                    use eco-friendly materials and practices wherever possible, because we believe that a
+                    great
+                    coffee should come with a side of conscience.
+                </p>
+            </div>
+        </div>
+    </section>
+    <script>
+        function showSection(sectionNumber) {
+            const sections = document.getElementsByClassName("card-content");
+            const buttons=document.getElementsByClassName('slider-button')
+            for (let i = 0; i < sections.length; i++) {
+                sections[i].classList.remove("active");
+                buttons[i].classList.remove('sactive');
+            }
+            document.getElementById(`section${sectionNumber}`).classList.add("active");
+            document.getElementById(`sbutton${sectionNumber}`).classList.add("sactive");
+        }
+    </script>
+    {% include 'footer.html'%}
+</body>
+
+</html>

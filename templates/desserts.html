@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BREW HOUSE</title>
+    {% include 'fav.html'%}
+    <link rel="stylesheet" type="text/css" href="/static/css/menu.css">
+</head>
+
+<body>
+    {% include 'nav.html'%}
+    <section class="menu2">
+        <div class="divisions">
+            <ul>
+                <li><a href='menu' class="underline-on-hover1">Beverages</a></li>
+                <li><a href='cookies' class="underline-on-hover1">Cookies</a></li>
+                <li><a href='sweets' class="underline-on-hover1">Sweet Treats</a></li>
+                <li><a href='desserts' class="underline-on-hover1">Desserts</a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="sectionmenu">
+        <div class="product-card">
+            <div class="product-image">
+                <img src="/static/imgs/Chocolate Mousse.jpeg" alt="Product 1">
+            </div>
+            <div class="product-description">
+                <h1>Chocolate Mousse</h1>
+            </div>
+            <div class="product-price">
+                ₹70/-
+            </div>
+            <div>
+          <form action="cart" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="Product-id" value="23" />
+            <input type="hidden" name="Product-name" value="Chocolate Mousse" />
+            <input type="hidden" name="action" value="add" />
+            <button type="submit" class="ATC-2">Add to Cart</button>
+          </form>
+        </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+                <img src="/static/imgs/Fruit Tart.jpeg" alt="Product 1">
+            </div>
+            <div class="product-description">
+                <h1>Fruit Tart</h1>
+            </div>
+            <div class="product-price">
+                ₹80/-
+            </div>
+            <div>
+          <form action="cart" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="Product-id" value="24" />
+            <input type="hidden" name="Product-name" value="Fruit Tart" />
+            <input type="hidden" name="action" value="add" />
+            <button type="submit" class="ATC-2">Add to Cart</button>
+          </form>
+        </div>
+        </div>
+    </section>
+    <br><br>
+    {% include 'footer.html'%}
+</body>
+
+</html>

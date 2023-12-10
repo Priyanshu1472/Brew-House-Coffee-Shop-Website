@@ -1,0 +1,121 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-image: url(/static/imgs/bannerimage.jpg);
+}
+
+.ecommerce-footer {
+  position: fixed !important;
+}
+
+header {
+  background-color: #333;
+  color: #FFE4C8;
+  padding: 10px;
+  text-align: center;
+}
+
+.containerc {
+  background-color: #311C10;
+  color: #FFE4C8;;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ccc;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #333;
+  color: #FFE4C8;
+}
+
+.cart-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+h1 {
+  font-family: "Centaur";
+  font-size: 70px;
+  text-align: center;
+}
+
+.containerc h2{
+  font-family: "Centaur";
+  font-size: 50px;
+  margin-left: 32%;
+  margin-top: 5%;
+}
+
+#checkout{
+  color: #FFE4C8;
+  font-family: "Centaur";
+  font-size: 30px;
+  font-weight: bolder;
+  margin-left: 70%;
+  margin-top:5% ;
+  margin-bottom:5% ;
+}
+
+#checkout {
+  background:none;
+  text-decoration: none;
+  position: relative; /* To allow absolute positioning within the link */
+}
+
+/* Create the underline element */
+#checkout::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px; /* Adjust the height of the underline as needed */
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff; /* Adjust the color as needed */
+  transition: width 0.3s; /* Add a smooth transition effect */
+}
+
+/* Define the hover effect */
+#checkout:hover::after {
+  width: 100%; /* Expand the underline from left to right */
+}
+
+.remove-button{
+  background: none;
+  color: #FFE4C8;
+}
+
+.total{
+  margin-left: 120px;
+}

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Brew House</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/menu.css" />
+    {% include 'fav.html'%}
+  </head>
+
+  <body>
+    {% include 'nav.html'%}
+    <section class="menu2">
+      <div class="divisions">
+        <ul>
+          <li><a href="menu" class="underline-on-hover1">Beverages</a></li>
+          <li><a href="cookies" class="underline-on-hover1">Cookies</a></li>
+          <li><a href="sweets" class="underline-on-hover1">Sweet Treats</a></li>
+          <li><a href="desserts" class="underline-on-hover1">Desserts</a></li>
+        </ul>
+      </div>
+    </section>
+    <section class="sectionmenu">
+      <div class="product-card">
+        <div class="product-image">
+          <img src="/static/imgs/cold coffee.jpg" alt="Product 1" />
+        </div>
+        <div class="product-description">
+          <h1>Cold Coffee</h1>
+        </div>
+        <div class="product-price">₹99/-</div>
+        <div>
+          <form action="cart" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="Product-id" value="1" />
+            <input type="hidden" name="Product-name" value="Cold Coffee" />
+            <input type="hidden" name="action" value="add" />
+            <button type="submit" class="ATC-2">Add to Cart</button>
+          </form>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="/static/imgs/strong cold coffee.jpg" alt="Product 2" />
+        </div>
+        <div class="product-description">
+          <h1>Strong Cold Coffee</h1>
+        </div>
+        <div class="product-price">₹119/-</div>
+        <div>
+          <form action="cart" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="Product-id" value="2" />
+            <input
+              type="hidden"
+              name="Product-name"
+              value="Strong Cold Coffee"
+            />
+            <input type="hidden" name="action" value="add" />
+            <button type="submit" class="ATC-2">Add to Cart</button>
+          </form>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="/static/imgs/amaricano coffee.jpeg" alt="Product 3" />
+        </div>
+        <div class="product-description">
+          <h1>Americano</h1>
+        </div>
+        <div class="product-price">₹149/-</div>
+        <div>
+          <form action="cart" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="Product-id" value="3" />
+            <input type="hidden" name="Product-name" value="Americano" />
+            <input type="hidden" name="action" value="add" />
+            <button type="submit" class="ATC-2">Add to Cart</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src="/static/imgs/cappucino.jpg" alt="Product 4" />
+        </div>
+        <div class="product-description">
+          <h1>Cappucino</h1>
+        </div>
+        <div class="product-price">₹159/-</div>
+        <div>
+          <form action="cart" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="Product-id" value="4" />
+            <input type="hidden" name="Product-name" value="Cappucino Coffee" />
+            <input type="hidden" name="action" value="add" />
+            <button type="submit" class="ATC-2">Add to Cart</button>
+          </form>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="/static/imgs/caramel.jpeg" alt="Product 5" />
+        </div>
+        <div class="product-description">
+          <h1>Caramel Coffee</h1>
+        </div>
+        <div class="product-price">₹199/-</div>
+        <div>
+          <form action="cart" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="Product-id" value="5" />
+            <input type="hidden" name="Product-name" value="Caramel Coffee" />
+            <input type="hidden" name="action" value="add" />
+            <button type="submit" class="ATC-2">Add to Cart</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img
+            src="/static/imgs/double choco chip coffee.jpeg"
+            alt="Product 6"
+          />
+        </div>
+        <div class="product-description">
+          <h1>Double Choco Chip</h1>
+        </div>
+        <div class="product-price">₹199/-</div>
+        <div>
+          <form action="cart" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="Product-id" value="6" />
+            <input
+              type="hidden"
+              name="Product-name"
+              value="Double Choco Chip"
+            />
+            <input type="hidden" name="action" value="add" />
+            <button type="submit" class="ATC-2">Add to Cart</button>
+          </form>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="/static/imgs/Espresso.jpeg" alt="Product 7" />
+        </div>
+        <div class="product-description">
+          <h1>Espresso</h1>
+        </div>
+        <div class="product-price">₹209/-</div>
+        <div>
+          <form action="cart" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="Product-id" value="7" />
+            <input type="hidden" name="Product-name" value="Espresso" />
+            <input type="hidden" name="action" value="add" />
+            <button type="submit" class="ATC-2">Add to Cart</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src="/static/imgs/Frappuccino.jpeg" alt="Product 8" />
+        </div>
+        <div class="product-description">
+          <h1>Frappucino</h1>
+        </div>
+        <div class="product-price">₹219/-</div>
+        <div>
+          <form action="cart" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="Product-id" value="8" />
+            <input type="hidden" name="Product-name" value="Frappucino" />
+            <input type="hidden" name="action" value="add" />
+            <button type="submit" class="ATC-2">Add to Cart</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="sectionmenu1">
+      <div class="product-card">
+        <div class="product-image">
+          <img src="/static/imgs/iced latte.jpeg" alt="Product 9" />
+        </div>
+        <div class="product-description">
+          <h1>Iced Latte</h1>
+        </div>
+        <div class="product-price">₹219/-</div>
+        <div>
+          <form action="cart" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="Product-id" value="9" />
+            <input type="hidden" name="Product-name" value="Iced Latte" />
+            <input type="hidden" name="action" value="add" />
+            <button type="submit" class="ATC-2">Add to Cart</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src="/static/imgs/irish coffee.jpeg" alt="Product 10" />
+        </div>
+        <div class="product-description">
+          <h1>Irish Coffee</h1>
+        </div>
+        <div class="product-price">₹249/-</div>
+        <div>
+          <form action="cart" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="Product-id" value="10" />
+            <input type="hidden" name="Product-name" value="Irish Coffee" />
+            <input type="hidden" name="action" value="add" />
+            <button type="submit" class="ATC-2">Add to Cart</button>
+          </form>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="/static/imgs/Macchiato.jpeg" alt="Product 11" />
+        </div>
+        <div class="product-description">
+          <h1>Macchiato</h1>
+        </div>
+        <div class="product-price">₹269/-</div>
+        <div>
+          <form action="cart" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="Product-id" value="11" />
+            <input type="hidden" name="Product-name" value="Macchiato" />
+            <input type="hidden" name="action" value="add" />
+            <button type="submit" class="ATC-2">Add to Cart</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src="/static/imgs/Whipped coffee.jpeg" alt="Product 12" />
+        </div>
+        <div class="product-description">
+          <h1>Whipped Coffee</h1>
+        </div>
+        <div class="product-price">₹129/-</div>
+        <div>
+          <form action="cart" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="Product-id" value="12" />
+            <input type="hidden" name="Product-name" value="Whipped Coffee" />
+            <input type="hidden" name="action" value="add" />
+            <button type="submit" class="ATC-2">Add to Cart</button>
+          </form>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="/static/imgs/affogato.jpeg" alt="Product 13" />
+        </div>
+        <div class="product-description">
+          <h1>Affogato</h1>
+        </div>
+        <div class="product-price">₹299/-</div>
+        <div>
+          <form action="cart" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="Product-id" value="13" />
+            <input type="hidden" name="Product-name" value="Affogato Coffee" />
+            <input type="hidden" name="action" value="add" />
+            <button type="submit" class="ATC-2">Add to Cart</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src="/static/imgs/ristretto.jpeg" alt="Product 14" />
+        </div>
+        <div class="product-description">
+          <h1>Ristretto</h1>
+        </div>
+        <div class="product-price">₹299/-</div>
+        <div>
+          <form action="cart" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="Product-id" value="14" />
+            <input type="hidden" name="Product-name" value="Ristretto Coffee" />
+            <input type="hidden" name="action" value="add" />
+            <button type="submit" class="ATC-2">Add to Cart</button>
+          </form>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="/static/imgs/decaf coffee.jpg" alt="Product 15" />
+        </div>
+        <div class="product-description">
+          <h1>Decaf Coffee</h1>
+        </div>
+        <div class="product-price">₹399/-</div>
+        <div>
+          <form action="cart" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="Product-id" value="15" />
+            <input type="hidden" name="Product-name" value="Decaf Coffee" />
+            <input type="hidden" name="action" value="add" />
+            <button type="submit" class="ATC-2">Add to Cart</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src="/static/imgs/flat white coffee.jpeg" alt="Product 16" />
+        </div>
+        <div class="product-description">
+          <h1>Flat White Coffee</h1>
+        </div>
+        <div class="product-price">₹499/-</div>
+        <div>
+          <form action="cart" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="Product-id" value="16" />
+            <input type="hidden" name="Product-name" value="Flat White Coffee"/>
+            <input type="hidden" name="action" value="add" />
+            <button type="submit" class="ATC-2">Add to Cart</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <br /><br />
+    {% include 'footer.html'%}
+  </body>
+</html>

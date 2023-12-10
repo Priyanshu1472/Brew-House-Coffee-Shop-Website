@@ -1,0 +1,79 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-image: url(/static/imgs/bannerimage.jpg);
+}
+
+.ecommerce-footer {
+  position: relative !important;
+}
+
+h1{
+    font-family: "Centaur";
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+}
+
+.card {
+    padding-left: 20%;
+    background-color: #311C10;
+    border: 1px solid #000000;
+    /* border-radius: 10px; */
+    width: 295px;
+    height: 450px;
+    padding: 65px;
+    margin-left: 37%;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    display: inline-block;
+    box-shadow:0px 0px 500px 10px #ffffff;
+    
+}
+
+button {
+    background-color: 00ffff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#login{
+    font-family: "Centaur";
+    padding:10px 50px;
+    margin-left: 8px;
+    margin-top: 0px;
+    font-size: 25px;
+    background-color: #311C10;
+    color: #ffffff;
+}
+
+#login{
+    overflow: hidden;
+}
+
+#login{
+    transition: 400ms;
+    object-fit: cover;
+}
+
+#login:hover {
+    transform: scale(1.1);
+}
+
+a{
+    color: white;
+}
+
+h2{
+margin-top: -30px;
+}
+
+label{
+    color: #FFE4C8;
+}
+

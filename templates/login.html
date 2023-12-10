@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BREW HOUSE</title>
+    {% include 'fav.html'%}
+    <link rel="stylesheet" href="/static/css/login.css" />
+  </head>
+
+  <body>
+    <div class="card">
+      <h1>LOGIN</h1>
+      <br />
+      <br />
+      <form id="signupForm" action="/" method="post">
+        {% csrf_token %} {% if error %}
+        <h2>{{error}}</h2>
+        {% endif %}
+        <label for="Username">Username:</label>
+        <input type="Username" id="Username" name="Username" required />
+        <br /><br />
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+        <br /><br /><br /><br />
+        <button type="submit" id="login">Login</button>
+        <br />
+        <br />
+        <hr />
+        <br />
+        <br /><br />
+        <div class="signup-button">
+          <input type="hidden" name="type" value="login" id="" />
+          <a href="signup" rel="noopener noreferrer"
+            ><button type="button" id="create-new-account">
+              Create New Account
+            </button></a
+          >
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

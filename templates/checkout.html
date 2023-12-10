@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BREW HOUSE</title>
+    {% include 'fav.html'%}
+    <link rel="stylesheet" href="/static/css/checkout.css">
+</head>
+<body>
+    {% include 'nav.html' %}
+    <div class="card">
+        <h1>BUY NOW</h1>
+        <br />
+        <br />
+        <form id="signupForm" action="/" method="post">
+          {% csrf_token %} 
+          <label for="Name">Name:</label>
+          <input type="Name" id="Name" name="Name" required /><br><br>
+          <label for="Address">Address:</label>
+          <input type="Address" id="Address" name="Address" required />
+          <br /><br />
+          <label for="Contact no.">Contact no.:</label>
+          <input type="Contact no." id="Contact no." name="Contact no." required /><br><br>
+          <label for="payment">Payment Modes:</label>
+          <br>
+          <label for="Gpay">Gpay</label>
+          <input type="radio" id="payment" name="payment" required /><br>
+          <label for="Paytm">Paytm</label>
+          <input type="radio" id="payment" name="payment" required /><br>
+          <label for="PhonePe">PhonePe</label>
+          <input type="radio" id="payment" name="payment" required /><br>
+          <label for="COD">COD</label>
+          <input type="radio" id="payment" name="payment" required /><br>
+          <br /><br /><br /><br />
+          <center><button id="login"><a href="/popup">Place Order</a></button></center>
+        </div>
+      </form>
+      </div>
+    {% include 'footer.html' %}
+</body>
+</html>

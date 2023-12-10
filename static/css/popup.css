@@ -1,0 +1,22 @@
+#popup {
+    display: block;
+    position: fixed;
+    border-radius: 10px;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffe4c8;
+    padding: 100px 150px;
+    box-shadow: 0 0px 10px  0px rgba(0, 0, 0, 0.2);
+    font-family: 'century';
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.ecommerce-footer {
+    position: fixed !important;
+  }
+
+body{
+    background-image: url(/static/imgs/bannerimage.jpg);
+}

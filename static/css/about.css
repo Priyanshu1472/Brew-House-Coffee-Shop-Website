@@ -1,0 +1,153 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #FFE4C8;
+}
+
+.sec1 h1{
+    padding: 50px 0px;
+    font-size: 70px;
+    text-align: center;
+    font-family: 'Centaur';
+}
+.Welcome {
+    padding-left: 25%;
+}
+
+.card1{
+    background-color: #FFFFFF;
+    border: 1px solid #ffffff;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    width: 800px;
+    align-items: center;
+    padding: 65px;
+    margin: 20px;
+    box-shadow:0px 0px 50px 20px #000;
+}
+
+.au1 p{
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    font-family: 'High Tower Text';
+}
+/* .aboutus-para p{
+    border: 1px black;
+    padding-left: 120px;
+} */
+
+hr.horizontal{
+    background-color: #000000;
+    height: 5px;
+    width: 80%;
+    border: none;
+    margin-bottom: 20px;
+    margin-top: 100px;
+    visibility: visible; /* Ensure it's visible */
+}
+.aul button{
+    border: none;
+    background: none;
+    color: #311C10;
+    cursor: pointer;
+    padding-left: 10px;
+}
+.aul button:hover{
+    color: #ffffff;
+}
+ul.aul {
+    list-style: none;
+    display: flex;
+}
+
+li.au {
+    color: #000;
+    margin: 5px 50px;
+    padding-left: 105px;
+    font-family: 'Centaur';
+    font-size: large;
+    font-weight: 900;
+}
+
+.home-btn{
+    color: #000;
+    text-decoration: none;
+    font-family: 'Copperplate Gothic Light';
+}
+
+.home-btn:hover{
+    color: #533d30;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50vh;
+}
+.card {
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+}
+.card-content {
+    display: none;
+}
+
+.card-content.active h2{
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+    font-family: 'High Tower Text';
+    font-weight: bolder;
+    margin-bottom: 50px;
+}
+
+.card-content.active p{
+    font-family: 'High Tower Text';
+    font-size: x-large;
+    font-weight: bolder;
+}
+.card-content.active {
+    font-size: x-large;
+    background-color: #FFFFFF;
+    border: 1px solid #ffffff;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    width: 900px;
+    height: 250px;
+    align-items: center;
+    padding: 60px;
+    margin: 450px;
+    box-shadow:0px 0px 50px 20px #000;
+    display: block;
+}
+.slider-button {
+    text-decoration: none;
+    color: #000000;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    padding: 20px 33px;
+    font-family: 'Centaur';
+    font-size: xx-large;
+    font-weight: bolder;
+}
+.slider-button:hover{
+    background-color: #311C10;
+    color: #FFFFFF;
+}
+.slider-button:not(:first-child) {
+    margin-left: 10px;
+}
+
+.slider-buttons{
+    padding-left: 10%;
+}
+
+.sactive{
+    background-color: #311C10;
+    color: #FFFFFF;
+}

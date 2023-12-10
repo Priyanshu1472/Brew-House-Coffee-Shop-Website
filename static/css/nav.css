@@ -1,0 +1,130 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styling for the header */
+header {
+  background: #311c10;
+  color: #ffe4c8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 10px 20px; */
+}
+
+/* Company logo and name */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 150px;
+  height: 150px;
+  margin-right: 10px;
+}
+
+.logo h1 {
+  font-size: 50px;
+  font-family: "Copperplate Gothic Light";
+  color: #ffe4c8;
+  font-weight: 100;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  padding-right: 20px;
+}
+
+nav li {
+  margin-left: 40px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffe4c8;
+  font-weight: 600;
+  font-size: 27px;
+  font-family: "Book Antiqua";
+}
+
+a.underline-on-hover {
+  text-decoration: none;
+  position: relative; /* To allow absolute positioning within the link */
+}
+
+/* Create the underline element */
+a.underline-on-hover::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px; /* Adjust the height of the underline as needed */
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff; /* Adjust the color as needed */
+  transition: width 0.3s; /* Add a smooth transition effect */
+}
+
+/* Define the hover effect */
+a.underline-on-hover:hover::after {
+  width: 100%; /* Expand the underline from left to right */
+}
+
+body,
+input,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+/* Fancy styling for the search bar */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10px;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.search-input {
+  background: #ffe4c8;
+  width: 300px; /* Increase the width to 400px (or any other value you prefer) */
+  height: 40px;
+  border: 2px solid #311c10;
+  border-radius: 10px;
+  padding: 5px;
+  padding-left: 20px;
+  margin-left: 10px;
+  font-size: 16px;
+  outline: none;
+}
+.search-input::placeholder {
+  color: #311c10;
+  opacity: 0.7;
+  font-size: 18px;
+}
+
+.search-icon {
+  height: 20px;
+  width: 20px;
+  margin-left: -35px;
+}
+
+svg {
+  margin-top: 5px;
+}
+
+svg #fill1 {
+  fill: #ffe4c8;
+}
+
+svg #fill1:hover {
+  fill: white;
+}
